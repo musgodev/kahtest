@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kah Estúdio - Cuidar de si faz bem</title>
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <!-- Base CSS -->
+    <link rel="stylesheet" href="./css/base.css">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Media Queries -->
+    <link rel="stylesheet" href="./css/mediaqueries.css">
+
+    <!-- Tipografias -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header class="" id="header">
+        <nav class="header__nav container" id="navigation">
+            <a href="#">
+                <img src="./assets/logo-rosa.png" alt="Logo da DoctorCare" id="imglogo" class="header__logo">
+            </a>
+            <div class="menu">
+                <ul>
+                    <li> <a href="#home" onclick="closeMenu()" class="link-menu"> Início </a> </li>
+                    <li> <a href="#services" onclick="closeMenu()" class="link-menu"> Serviços </a> </li>
+                    <li> <a href="#locate" onclick="closeMenu()"  class="link-menu"> Localização </a> </li>    
+                    <li> <a href="https://api.whatsapp.com/send?phone=11934504213" onclick="closeMenu()" target="_blank" class="button-menu"> Agende seu horário </a> </li>    
+                </ul>
+                <!-- <ul class="menu__social-links">
+                    <li> <a href="https://www.instagram.com" target="_blank"> <img src="./assets/icon-insta.svg" alt=""> </a>  </li>
+                    <li> <a href="https://www.facebook.com" target="_blank"> <img src="./assets/icon-fb.svg" alt=""> </a>  </li>
+                    <li> <a href="https://www.youtube.com" target="_blank"> <img src="./assets/icon-youtb.svg" alt=""> </a>  </li> 
+                </ul> -->
+            </div>
+            
+            <button class="open-menu" onclick="openMenu()" aria-label="Abrir Menu" aria-expanded="false">
+                <img src="./assets/mobile-menu.svg" alt="Três barras que representam o botão para abertura do menu na versão mobile" id="menumobile">
+            </button>
+            <button class="close-menu" onclick="closeMenu()" aria-label="Fechar Menu" aria-expanded="true">
+                <img src="./assets/close-menu.svg" alt="">
+            </button>
+        </nav>
+    </header>
+
+    <main class="main container" id="home">
+        <div class="main__content">
+            <h2>O tipo de cuidado que você merece</h2>
+            <p>Faça por você oque ninguem mais pode.</p>
+            <a href="https://api.whatsapp.com/send?phone=11934504213" target="_blank">Agendar Horário</a>
+        </div>
+    </main>
+
+    <section class="serviços" id="services">
+        <div class="serviços__header">
+            <h2>Conheça nossos serviços.</h2>
+        </div>
+        <div class="serviços__cards container">
+            <div class="card">
+                <div class="card__img">
+                    <img src="./assets/sobrancelha.jpg" alt="">
+                </div>
+                <div class="card__content">
+                    <h3>Embelezamento do Olhar</h3>
+                    <ul>
+                        <li>Design de Sobrancelhas</li>
+                        <li>Micropigmentação</li>
+                        <li>Brow Lamination</li>
+                        <li>Lash Lifiting</li>
+                        <li>Tintura</li>
+                        <li>Henna</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__img">
+                    <img src="./assets/estetica_corporal_facial.jpg" alt="">
+                </div>
+                <div class="card__content">
+                    <h3>Estética Corporal e Facial</h3>
+                    <ul>
+                        <li>Massagem Modeladora</li>
+                        <li>Massagem Relaxante</li>
+                        <li>Drenagem Linfática</li>
+                        <li>Limpeza de Pele</li>
+                        <li>Pedras Quentes</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__img">
+                    <img src="./assets/depilaçao.jpg" alt="">
+                </div>
+                <div class="card__content">
+                    <h3>Epilação</h3>
+                    <ul>
+                        <li>Método Espanhol</li>
+                        <li>Método Roll-on</li>
+                        <li>Método Egípcio (linha)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__img">
+                    <img src="./assets/pacotes.jpg" alt="">
+                </div>
+                <div class="card__content">
+                    <h3>Pacotes</h3>
+                    <ul>
+                        <li>Drenagem Linfática <br/>
+                        (8 ou 10 Sessões)</li>
+                        <li>Massagem Modeladora <br/>
+                        (8 ou 10 Sessões)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="locate" id="locate">
+        <div class="locate__content">
+            <h3>Onde Estamos Localizados ?</h3>
+            <p class="adress">Rua Arthur de Azevedo, 1857, Sala 53  - São Paulo <br/> SP 05405-015</p>
+            <a href="https://api.whatsapp.com/send?phone=11934504213" target="_blank">Entrar em Contato</a>
+        </div>
+        <div class="locate__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.052194260556!2d-46.68828444119819!3d-23.56656884415538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce579fd8a303f3%3A0xffe74e22b00f6990!2sR.%20Artur%20de%20Azevedo%2C%201857%20-%20Sala%2053%20-%20Pinheiros%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005418-010!5e0!3m2!1spt-BR!2sbr!4v1672591265455!5m2!1spt-BR!2sbr" width="100vw" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer class="footer container" id="footer">
+        <div class="footer__content">
+            <img src="./assets/logo-rosa.png" alt="">
+            <p>O tipo de cuidado que você merece.</p>
+        </div>
+        <ul>
+            <li><a href="https://www.instagram.com/kahestudio/" target="_blank"><img src="./assets/icon-insta.svg" alt=""></a> </li>
+            <li><a href="https://api.whatsapp.com/send?phone=11934504213" target="_blank"><img src="./assets/icon-whats.svg" alt=""></a></li>
+        </ul>
+    </footer>
+
+    <a href="#home" class="" id="backToTop">
+        <img src="./assets/back-to-top.svg" alt="Botão com seta pra cima para voltar ao topo da pagina">
+    </a>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="sr.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
