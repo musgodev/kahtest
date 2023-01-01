@@ -1,0 +1,17 @@
+:root {
+    
+    font-size: 62.5%; /* 1rem = 10px */
+    
+    /* Cores */
+    --bg-header: #f7f0ea;
+    --bg-header-dark: #ece6df;
+    --rosa: #b3838d;
+
+    /* Tipografias */
+    --font-title: 'Anton', sans-serif;
+    --font-text: 'Lato', sans-serif;
+
+    /* Calc variables */
+
+    --nav-height: 12vh;
+}
